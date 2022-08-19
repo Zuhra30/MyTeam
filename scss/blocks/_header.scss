@@ -1,0 +1,133 @@
+// header start
+.header {
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 77px;
+    padding-bottom: 133px;
+}
+
+.header-logo {
+    width: 160px;
+    height: 40px;
+    transition: all 0.4s ease;
+}
+
+.header-logo:active {
+    opacity: 0.6;
+}
+
+.navbar {
+    margin-right: auto;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    margin-left: 80px;
+}
+
+.navbar-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+
+.navbar-item__link {
+    text-decoration: none;
+    color: $mainTextColor;
+    transition: all 0.4s ease;
+}
+
+.navbar-item__link:hover {
+    color: $mainTextsColor;
+}
+
+.navbar-item__link:active {
+    opacity: 0.6;
+}
+
+.navbar-item__link:focus {
+    color: $mainTextsColor;
+    border-bottom: 2px solid $mainTextsColor;
+    border-radius: 5px;
+}
+
+.btn{
+    @include btn (9px 33px 11px 32px, 18px, transparent);
+    border: 2px solid $mainTextColor;
+    font-weight: 600;
+    line-height: 28px;
+    border-radius: 24px;
+    color: $mainTextColor;
+    text-decoration: none;
+}
+.header-btn {
+    transition: all 0.4s ease;
+}
+
+.header-btn:hover {
+    color: $mainBgsColor;
+    background-color: $mainTextsColor;
+    border: 2px solid $mainTextsColor;
+}
+
+.header-btn:active {
+    opacity: 0.6;
+}
+
+.header-hamburger {
+    display: none;
+}
+
+.header__line {
+    width: 20px;
+    height: 3px;
+    background-color: $mainTextColor;
+}
+
+.header__line:not(:last-child) {
+    margin-bottom: 3px;
+}
+// header end
+
+// mediaDevices
+@include mediaDevices (1200px){
+    .navbar-list {
+        margin-left: 70px;
+    }
+}
+
+@include mediaDevices (990px){
+    .navbar-list {
+        margin-left: 60px;
+    }
+}
+
+@include mediaDevices (769px){
+    .header-container {
+        padding-top: 57px;
+        padding-bottom: 113px;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .header-hamburger {
+        display: block;
+    }
+}
+
+@include mediaDevices (447px){
+    .header-container {
+        padding-top: 47px;
+        padding-bottom: 83px;
+    }
+}
