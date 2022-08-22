@@ -28,22 +28,22 @@
 
 .deliver-list__item {
     width: 350px;
-
 }
 
-// .deliver-item__quote {
-//     width: 67px;
-//     height: 56px;
-//     transform: translateY(20px);
-// }
+.deliver-list__item::before{
+    content: "";
+    display: inline-block;
+    width: 67px;
+    height: 56px;
+    background-image: url(../img/quote.svg);
+}
 
 .deliver-item__blockquote {
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
-    margin-bottom: 24px;
-
+    transform: translateY(-24px);
 }
 
 .deliver-item__heading {

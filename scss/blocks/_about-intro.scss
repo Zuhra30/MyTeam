@@ -1,0 +1,22 @@
+.intro {
+    background-image: url(../img/about-bg-orange.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 760px) bottom;
+}
+
+.intro-container {
+    padding-bottom: 120px;
+}
+
+.intro-heading {
+    width: 350px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    margin-top: 0;
+}
+
+.intro-context {
+    width: 730px;
+}

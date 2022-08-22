@@ -5,6 +5,12 @@
     position: relative;
 }
 
+.team-disk {
+    background-image: url(../img/team-right-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 760px) bottom;
+}
+
 .team-container {
     display: flex;
     justify-content: space-between;
@@ -68,11 +74,6 @@
     margin-left: auto;
 }
 
-.team-img__right-bottom {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
 // team section end
 
 // mediaDevices 

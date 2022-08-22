@@ -1,4 +1,9 @@
 // intro section start
+.intro-disk {
+    background-image: url(../img/intro-blue-disk.svg), url(../img/intro-orange-disk.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 760px) center, calc(50% + 450px) calc(50% + 180px);
+}
 .intro-container {
     display: flex;
     justify-content: space-between;

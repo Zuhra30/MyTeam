@@ -1,0 +1,206 @@
+.meet {
+    width: 100%;
+    background-color: $meetBgColor;
+
+}
+
+.meet-disk {
+    background-image: url(../img/contact-bg-blue.svg), url(../img/deliver-left-top.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 760px) top, right bottom;
+}
+
+.meet-container {
+    padding-top: 140px;
+    padding-bottom: 168px;
+}
+
+.meet-container__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.meet-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.meet-list__item {
+    width: 350px;
+    height: 253px;
+    background-color: $teamBgColor;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 56px;
+}
+
+.meet-mb {
+    margin-bottom: 76px;
+}
+
+.meet-item__img {
+    margin-bottom: 16px;
+}
+
+.meet-item__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: $BgColor;
+}
+
+.meet-item__blockquote {
+    width: 254px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.meet-item__text {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.meet-item__icon {
+    transition: all 0.4s ease-in;
+}
+
+.meet-item__plus {
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    padding: 20px;
+    background-color: $mainTextsColor;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translateY(23px);
+}
+
+.meet-error__img {
+    display: none;
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    padding: 20px;
+    background-color: $BgColor;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translateY(-33px);
+}
+
+.meet-item__icon:hover .meet-plus__img {
+    display: none;
+}
+
+.meet-item__icon:hover .meet-error__img {
+    display: block;
+}
+
+@include mediaDevices (1100px){
+    .meet-container {
+        padding-top: 120px;
+        padding-bottom: 148px;
+    }
+    
+    .meet-disk {
+        background-image: url(../img/contact-bg-blue.svg), url(../img/deliver-left-top.svg);
+        background-repeat: no-repeat;
+        background-position: calc(50% - 520px) top, right bottom;
+    }
+
+    .meet-list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .meet-list__item:not(:nth-child(even)){
+        margin-right: 76px;
+    }
+}
+@include mediaDevices (990px){
+    .meet-container {
+        padding-top: 120px;
+        padding-bottom: 148px;
+    }
+    
+    .meet-disk {
+        background-image: url(../img/contact-bg-blue.svg), url(../img/deliver-left-top.svg);
+        background-repeat: no-repeat;
+        background-position: calc(50% - 495px) top, right bottom;
+    }
+
+    .meet-list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .meet-list__item:not(:nth-child(even)){
+        margin-right: 26px;
+    }
+}
+@include mediaDevices (769px){
+    .meet-container {
+        padding-top: 100px;
+        padding-bottom: 128px;
+    }
+    
+    .meet-disk {
+        background-image: url(../img/contact-bg-blue.svg), url(../img/deliver-left-top.svg);
+        background-repeat: no-repeat;
+        background-position: calc(50% - 385px) top, right bottom;
+    }
+
+    .meet-list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .meet-list__item:not(:nth-child(even)){
+        margin-right: 5px;
+    }
+}
+@include mediaDevices (740px){
+    .meet-disk {
+        background-image: url(../img/contact-bg-blue.svg), url(../img/deliver-left-top.svg);
+        background-repeat: no-repeat;
+        background-position: calc(50% - 385px) top, right bottom;
+    }
+
+    .meet-list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .meet-mb {
+        margin-bottom: 0px;
+    }
+    .meet-list__item:not(:nth-child(even)){
+        margin-right: 5px;
+    }
+    .meet-list__item:not(:last-child){
+        margin-bottom: 50px;
+    }
+}
+@include mediaDevices (375px){
+    .meet-disk {
+        background-image: url(../img/contact-bg-blue.svg), url(../img/deliver-left-top.svg);
+        background-repeat: no-repeat;
+        background-position: calc(50% - 175px) calc(50% - 1078px) , right bottom;
+    }
+}
